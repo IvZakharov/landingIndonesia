@@ -1,0 +1,41 @@
+@import "styles/variables";
+
+.mainNav {
+  ul {
+    li {
+      a {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        color: #121212;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        a {
+          font-size: 16px;
+          line-height: 26px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    @media (min-width: 1200px) {
+      li {
+        a {
+          font-size: 22px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+}

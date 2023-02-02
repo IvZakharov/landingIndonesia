@@ -1,0 +1,24 @@
+@import "styles/variables";
+
+.header {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+
+  .menuBtn {
+    span {
+      display: block;
+      width: 35px;
+      height: 3px;
+      background-color: #fff;
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
