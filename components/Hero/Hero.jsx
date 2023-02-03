@@ -29,10 +29,10 @@ const Hero = () => {
         <div className={styles.image}>
           <Image
             alt={"Hero images"}
-            src={"/images/hero.jpg"}
+            src={"/images/hero/hero.png"}
             quality={80}
-            width={700}
-            height={475}
+            width={707}
+            height={432}
             priority
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{

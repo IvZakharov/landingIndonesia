@@ -1,12 +1,57 @@
 import styles from "./Footer.module.scss";
-import Image from "next/image";
-import Link from "next/link";
 
-const Footer = () => {
+const links = [
+  { id: 0, href: "/", title: "Главаня" },
+  { id: 1, href: "#", title: "Структура" },
+  { id: 2, href: "#", title: "Преимущества" },
+  { id: 3, href: "#", title: "Процесс открытия" },
+  { id: 4, href: "#", title: "Стоимость" },
+
+  { id: 5, href: "#", title: "Контакты" },
+];
+
+const Footer = ({ linkUrl, tel }) => {
   return (
-    <footer className={`${styles.footer} container`}>
+    <footer className={styles.footer}>
+      <div className={"container"}>
+        <div
+          className={
+            "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 xl:gap-24"
+          }
+        >
+          <div className={"mb-12 md:col-span-2 xl:col-span-5"}>
+            <h4 className={styles.addressTitle}>Наш адрес</h4>
+            <p className={"text text-center md:text-left"}>
+              Jalan Sunset Road Nomor 819, Bali <br className={"xl:hidden"} />{" "}
+              Ruko Sunset Indah Nomor 10, Kuta, Bali
+            </p>
+          </div>
 
-    
+          <nav className={`${styles.nav} mb-12 xl:col-span-4`}>
+            <ul>
+              {links &&
+                links.map((obj, idx) => (
+                  <li key={idx}>
+                    <a href={obj.href}>{obj.title}</a>
+                  </li>
+                ))}
+            </ul>
+          </nav>
+
+          <div className={"flex flex-col gap-3 md:gap-4 xl:col-span-3"}>
+            <a
+              href={linkUrl}
+              target={"_blank"}
+              className={`button ${styles.button} mb-4`}
+            >
+              Написать <br /> в WhatsApp
+            </a>
+            <a href={`tel:${tel}`} className={styles.tel}>
+              {tel}
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };

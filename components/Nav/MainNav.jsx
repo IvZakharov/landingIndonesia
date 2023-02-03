@@ -1,7 +1,5 @@
 import styles from "./Nav.module.scss";
 
-import Link from "next/link";
-
 const links = [
   { id: 0, href: "/", title: "Главаня" },
   { id: 1, href: "#", title: "Структура" },
@@ -12,13 +10,13 @@ const links = [
   { id: 6, href: "#", title: "Контакты" },
 ];
 
-const MainNav = () => {
+const MainNav = ({ navLinks }) => {
   return (
     <nav className={styles.mainNav}>
       <ul>
         {links.map((link) => (
           <li key={link.id}>
-            <Link href={link.href}>{link.title}</Link>
+            <a href={link.href}>{link.title}</a>
           </li>
         ))}
       </ul>

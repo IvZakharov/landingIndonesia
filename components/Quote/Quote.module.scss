@@ -5,6 +5,27 @@
   background-color: $secondary;
 
   @media (min-width: 1312px) {
-    padding: 200px 0;
+    padding: 250px 0;
+  }
+
+  .image {
+    position: relative;
+
+    @media (min-width: 768px) {
+      width: 300px;
+      min-width: 300px;
+    }
+
+    @media (min-width: 1312px) {
+      width: 440px;
+      min-width: 440px;
+    }
+  }
+}
+
+.button {
+  @media (min-width: 1312px) {
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }

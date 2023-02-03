@@ -24,8 +24,8 @@ const Special = ({ linkUrl }) => {
               alt={"Partner image"}
               src={"/images/illustration/1.svg"}
               quality={100}
-              width={170}
-              height={90}
+              width={350}
+              height={200}
               style={{
                 width: "100%",
                 height: "auto",
@@ -54,8 +54,8 @@ const Special = ({ linkUrl }) => {
                 alt={"Partner image"}
                 src={"/images/illustration/2.svg"}
                 quality={100}
-                width={170}
-                height={90}
+                width={350}
+                height={200}
                 style={{
                   width: "100%",
                   height: "auto",
@@ -88,8 +88,8 @@ const Special = ({ linkUrl }) => {
               alt={"Partner image"}
               src={"/images/illustration/3.svg"}
               quality={100}
-              width={170}
-              height={90}
+              width={350}
+              height={200}
               style={{
                 width: "100%",
                 height: "auto",
