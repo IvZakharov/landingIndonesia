@@ -43,8 +43,6 @@ const faqArr = [
 ];
 
 const Faq = () => {
-  const [open, setOpen] = React.useState();
-
   return (
     <section>
       <div className={"container relative"}>

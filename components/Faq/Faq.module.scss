@@ -13,6 +13,7 @@
 
   .icon {
     margin-left: 15px;
+    transition: all 0.3s ease-in-out;
 
     @media (min-width: 1312px) {
       svg {

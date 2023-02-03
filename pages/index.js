@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Structure from "@/components/Structure/Structure";
@@ -11,8 +12,19 @@ import Special from "@/components/Special/Special";
 import Quote from "@/components/Quote/Quote";
 import Faq from "@/components/Faq/Faq";
 import Footer from "@/components/Footer/Footer";
+import MobileMenu from "@/components/MobileMenu/MobileMenu";
 
 export default function Home() {
+  const [menuIsOpen, setMenuIsOpen] = React.useState(false);
+
+  const openMenu = () => {
+    setMenuIsOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuIsOpen(false);
+  };
+
   return (
     <>
       <Head>
@@ -25,7 +37,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header onOpenMenu={openMenu} />
       <main>
         <div className={"mb-16 md:mb-32 xl:mb-56"}>
           <Hero />
@@ -66,6 +78,14 @@ export default function Home() {
         </div>
       </main>
       <Footer tel={"+62 813 3797 3097 "} />
+
+      {menuIsOpen && (
+        <MobileMenu
+          onCloseMenu={closeMenu}
+          tel={"+62 813 3797 3097 "}
+          linkUrl={""}
+        />
+      )}
     </>
   );
 }

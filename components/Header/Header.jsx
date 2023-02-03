@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import Image from "next/image";
 import MainNav from "@/components/Nav/MainNav";
 
-const Header = () => {
+const Header = ({ onOpenMenu }) => {
   return (
     <header className={`${styles.header}`}>
       <div className={"container"}>
@@ -10,7 +10,10 @@ const Header = () => {
           <MainNav />
         </div>
 
-        <button className={`block md:hidden ${styles.menuBtn}`}>
+        <button
+          onClick={onOpenMenu}
+          className={`block md:hidden ${styles.menuBtn}`}
+        >
           <span></span>
           <span></span>
           <span></span>

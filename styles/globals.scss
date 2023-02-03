@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import "./variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;

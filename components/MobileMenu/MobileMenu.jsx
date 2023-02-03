@@ -1,52 +1,50 @@
 import styles from "./MobileMenu.module.scss";
-import HeroMenu from "../HeroMenu/HeroMenu";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { menutop } from "../../data/menutop";
+import MainNav from "@/components/Nav/MainNav";
 
-const MobileMenu = ({ OnClickClose }) => {
+const MobileMenu = ({ onCloseMenu, linkUrl, tel }) => {
   return (
-    <div className={`pt-6 ${styles.mobileMenu}`}>
-      <div className="container flex flex-col md:items-center md:justify-between md:flex-row">
-        <div className={`${styles.logo}`}>
-          <Link href={"/"} onClick={() => OnClickClose(false)}>
-            <Image
-              src={"/images/logo.png"}
-              quality={100}
-              width={202}
-              height={67}
-              alt={"logo"}
+    <aside className={`pt-6 ${styles.mobileMenu}`}>
+      <div className="container flex flex-col md:items-center md:justify-between md:flex-row relative">
+        <button className={styles.closeBtn} onClick={onCloseMenu}>
+          <svg
+            width="27"
+            height="27"
+            viewBox="0 0 27 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="34.9276"
+              height="2.99379"
+              transform="matrix(0.708806 -0.705404 0.708806 0.705404 0.121094 24.8882)"
+              fill="#121212"
             />
-          </Link>
-        </div>
-        <nav className={styles.nav}>
-          <ul className={`${styles.menu} flex flex-col md:flex-row`}>
-            {menutop &&
-              menutop.map((obj, i) => (
-                <li key={i}>
-                  <Link href={obj.link} className={`${styles.links} `}>
-                    {obj.lable}
-                  </Link>
-                </li>
-              ))}
-          </ul>
-        </nav>
-        <div className="md:hidden flex flex-col justify-center items-center">
-          <HeroMenu />
-        </div>
-        <Link href={"#"} className={`${styles.contact}`}>
-          Contact Us
-        </Link>
-        <button
-          onClick={() => OnClickClose(false)}
-          className={`block md:hidden ${styles.menuBtn}`}
-        >
-          <span></span>
-          <span></span>
+            <rect
+              width="34.9276"
+              height="2.99379"
+              transform="matrix(0.708806 0.705404 -0.708806 0.705404 2.12109 0)"
+              fill="#121212"
+            />
+          </svg>
         </button>
+
+        <div className={"mb-12"}>
+          {" "}
+          <MainNav onCloseMenu={onCloseMenu} />
+        </div>
+
+        <a
+          href={linkUrl}
+          target={"_blank"}
+          className={`button ${styles.button} mb-4`}
+        >
+          Написать <br /> в WhatsApp
+        </a>
+        <a href={`tel:${tel}`} className={styles.tel}>
+          {tel}
+        </a>
       </div>
-    </div>
+    </aside>
   );
 };
 

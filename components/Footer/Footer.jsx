@@ -6,7 +6,6 @@ const links = [
   { id: 2, href: "#", title: "Преимущества" },
   { id: 3, href: "#", title: "Процесс открытия" },
   { id: 4, href: "#", title: "Стоимость" },
-
   { id: 5, href: "#", title: "Контакты" },
 ];
 

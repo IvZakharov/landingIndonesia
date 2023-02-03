@@ -1,7 +1,56 @@
 @import "styles/variables";
 
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding-top: 50px;
+  z-index: 10;
 
+  .closeBtn {
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 
+.button {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  display: block;
+  align-self: center;
 
+  @media (min-width: 1312px) {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
 
+.tel {
+  transition: color 0.2s ease-in-out;
+  font-weight: 700;
+  text-align: center;
+  color: $black;
+  font-size: 22px;
+  line-height: 29px;
+  white-space: nowrap;
+
+  @media (min-width: 1312px) {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  &:hover {
+    color: $secondary;
+  }
+}
