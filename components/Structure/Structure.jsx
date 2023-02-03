@@ -11,7 +11,7 @@ const advantages = [
 
 const Structure = () => {
   return (
-    <section>
+    <section id={"structure"}>
       <div className={"container relative"}>
         <div className={"grid md:grid-cols-2 md:gap-10"}>
           <div className={"xl:flex flex-col"}>

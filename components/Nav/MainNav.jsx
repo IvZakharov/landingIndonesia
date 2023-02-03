@@ -2,12 +2,12 @@ import styles from "./Nav.module.scss";
 
 const links = [
   { id: 0, href: "/", title: "Главаня" },
-  { id: 1, href: "#", title: "Структура" },
-  { id: 2, href: "#", title: "Преимущества" },
-  { id: 3, href: "#", title: "Процесс открытия" },
-  { id: 4, href: "#", title: "Стоимость" },
-  { id: 5, href: "#", title: "FAQ" },
-  { id: 6, href: "#", title: "Контакты" },
+  { id: 1, href: "#structure", title: "Структура" },
+  { id: 2, href: "#advantages", title: "Преимущества" },
+  { id: 3, href: "#steps", title: "Процесс открытия" },
+  { id: 4, href: "#price", title: "Стоимость" },
+  { id: 5, href: "#faq", title: "FAQ" },
+  { id: 6, href: "#contacts", title: "Контакты" },
 ];
 
 const MainNav = ({ navLinks, onCloseMenu }) => {

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Price = () => {
   return (
-    <section>
+    <section id={"price"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-center mb-3"}>Базовый пакет</h2>
         <p className={styles.price}>

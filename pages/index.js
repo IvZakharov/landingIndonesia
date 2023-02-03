@@ -36,56 +36,57 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={menuIsOpen ? "overflow-hidden" : ""}>
+        <Header onOpenMenu={openMenu} />
+        <main>
+          <div className={"mb-16 md:mb-32 xl:mb-56"}>
+            <Hero />
+          </div>
+          <div className={"mb-36 md:mb-48 xl:mb-72"}>
+            <Structure />
+          </div>
+          <div className={"mb-36 md:mb-48 xl:mb-72"}>
+            <Benefits />
+          </div>
 
-      <Header onOpenMenu={openMenu} />
-      <main>
-        <div className={"mb-16 md:mb-32 xl:mb-56"}>
-          <Hero />
-        </div>
-        <div className={"mb-36 md:mb-48 xl:mb-72"}>
-          <Structure />
-        </div>
-        <div className={"mb-36 md:mb-48 xl:mb-72"}>
-          <Benefits />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Advantages />
+          </div>
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Advantages />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Steps />
+          </div>
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Steps />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Price />
+          </div>
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Price />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Partners />
+          </div>
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Partners />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Special />
+          </div>
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Special />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Quote />
+          </div>
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Quote />
-        </div>
+          <div className={"mb-32 xl:mb-52"}>
+            <Faq />
+          </div>
+        </main>
+        <Footer tel={"+62 813 3797 3097 "} />
 
-        <div className={"mb-32 xl:mb-52"}>
-          <Faq />
-        </div>
-      </main>
-      <Footer tel={"+62 813 3797 3097 "} />
-
-      {menuIsOpen && (
-        <MobileMenu
-          onCloseMenu={closeMenu}
-          tel={"+62 813 3797 3097 "}
-          linkUrl={""}
-        />
-      )}
+        {menuIsOpen && (
+          <MobileMenu
+            onCloseMenu={closeMenu}
+            tel={"+62 813 3797 3097 "}
+            linkUrl={""}
+          />
+        )}
+      </div>
     </>
   );
 }

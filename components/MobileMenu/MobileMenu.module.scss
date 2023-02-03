@@ -8,7 +8,9 @@
   bottom: 0;
   background-color: white;
   padding-top: 50px;
+  padding-bottom: 50px;
   z-index: 10;
+  overflow-y: scroll;
 
   .closeBtn {
     margin-bottom: 40px;

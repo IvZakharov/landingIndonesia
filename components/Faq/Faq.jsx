@@ -44,7 +44,7 @@ const faqArr = [
 
 const Faq = () => {
   return (
-    <section>
+    <section id={"faq"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-center mb-5 md:mb-10 xl:mb-20"}>
           FAQ

@@ -77,7 +77,7 @@ const whatDoesProcess = [
 
 const Steps = () => {
   return (
-    <section className={styles.steps}>
+    <section className={styles.steps} id={"steps"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-white mb-24 md:mb-32"}>
           Что необходимо <br /> для регистрации?
