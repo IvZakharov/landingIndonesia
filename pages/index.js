@@ -5,6 +5,9 @@ import Structure from "@/components/Structure/Structure";
 import Benefits from "@/components/Benefits/Benefits";
 import Advantages from "@/components/Advantages/Advantages";
 import Steps from "@/components/Steps/Steps";
+import Price from "@/components/Price/Price";
+import Partners from "@/components/Partners/Partners";
+import Special from "@/components/Special/Special";
 
 export default function Home() {
   return (
@@ -32,7 +35,21 @@ export default function Home() {
           <Advantages />
         </div>
 
-        <Steps />
+        <div className={"mb-32 xl:mb-52"}>
+          <Steps />
+        </div>
+
+        <div className={"mb-32 xl:mb-52"}>
+          <Price />
+        </div>
+
+        <div className={"mb-32 xl:mb-52"}>
+          <Partners />
+        </div>
+
+        <div className={"mb-32 xl:mb-52"}>
+          <Special />
+        </div>
       </main>
     </>
   );
