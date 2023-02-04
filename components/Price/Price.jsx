@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Price = ({ linkUrl }) => {
   return (
-    <section id={"price"} className={"pt-8 xl:pt-14"}>
+    <section id={"price"} className={"pt-8 xl:pt-10"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-center mb-3"}>Базовый пакет</h2>
         <p className={styles.price}>
