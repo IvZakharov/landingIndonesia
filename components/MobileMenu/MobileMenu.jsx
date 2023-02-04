@@ -36,7 +36,7 @@ const MobileMenu = ({ onCloseMenu, linkUrl, tel }) => {
         <a
           href={linkUrl}
           target={"_blank"}
-          className={`button ${styles.button} mb-4`}
+          className={`button button--secondary ${styles.button} mb-4`}
         >
           Написать <br /> в WhatsApp
         </a>

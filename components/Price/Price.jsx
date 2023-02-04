@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Price = ({ linkUrl }) => {
   return (
-    <section id={"price"}>
+    <section id={"price"} className={"pt-8 xl:pt-14"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-center mb-3"}>Базовый пакет</h2>
         <p className={styles.price}>
@@ -118,7 +118,7 @@ const Price = ({ linkUrl }) => {
               <a
                 href={linkUrl}
                 target={"_blank"}
-                className={`button ${styles.button} `}
+                className={`button button--secondary ${styles.button} `}
               >
                 Получить специальное предложение
               </a>
@@ -129,7 +129,7 @@ const Price = ({ linkUrl }) => {
           <a
             href={linkUrl}
             target={"_blank"}
-            className={`button ${styles.button}`}
+            className={`button button--secondary ${styles.button}`}
           >
             Получить специальное предложение
           </a>

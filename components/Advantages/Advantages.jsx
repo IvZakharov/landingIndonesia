@@ -49,7 +49,7 @@ const items = [
 
 const Advantages = () => {
   return (
-    <section id={"advantages"}>
+    <section id={"advantages"} className={"pt-8 xl:pt-20"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-center mb-10 md:mb-16 xl:mb-20"}>
           Преимущества Индонезии

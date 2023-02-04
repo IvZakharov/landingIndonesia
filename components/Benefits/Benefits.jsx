@@ -48,7 +48,7 @@ const Benefits = ({ linkUrl }) => {
           <a
             href={linkUrl}
             target={"_blank"}
-            className={`button whitespace-nowrap ${styles.button}`}
+            className={`button button--secondary whitespace-nowrap ${styles.button}`}
           >
             Подробнее о тарифах и выгодах
           </a>

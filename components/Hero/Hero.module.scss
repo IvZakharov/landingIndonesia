@@ -12,7 +12,9 @@
 
   @media (min-width: 1312px) {
     height: 100vh;
-    min-height: 870px;
+    min-height: 800px;
+    padding-top: 0px;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,12 +76,11 @@
 
     @media (min-width: 984px) {
       width: 470px;
-      right: 35px;
     }
 
     @media (min-width: 1312px) {
       width: 710px;
-      right: 35px;
+
       border-radius: 250px 30px 30px 30px;
     }
   }

@@ -14,7 +14,11 @@ const Special = ({ linkUrl }) => {
               Открытие представительства компании в Индонезии. Оставьте заявку
               для получения деталей
             </p>
-            <a href={linkUrl} target={"_blank"} className={"button"}>
+            <a
+              href={linkUrl}
+              target={"_blank"}
+              className={"button button--secondary"}
+            >
               Оставить заявку
             </a>
           </div>
@@ -43,7 +47,11 @@ const Special = ({ linkUrl }) => {
               Получите индивидуальные условия и реквизиты для тестового платежа
               до открытия компании
             </p>
-            <a href={linkUrl} target={"_blank"} className={"button"}>
+            <a
+              href={linkUrl}
+              target={"_blank"}
+              className={"button button--secondary"}
+            >
               Получить
             </a>
           </div>
@@ -78,7 +86,11 @@ const Special = ({ linkUrl }) => {
               <li className={"text mb-1"}>Разрешения на экспорт/импорт</li>
               <li className={"text mb-1"}>Регистрация недвижимости</li>
             </ul>
-            <a href={linkUrl} target={"_blank"} className={"button"}>
+            <a
+              href={linkUrl}
+              target={"_blank"}
+              className={"button button--secondary"}
+            >
               Бесплатная консультация
             </a>
           </div>

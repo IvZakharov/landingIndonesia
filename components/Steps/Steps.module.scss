@@ -1,17 +1,17 @@
 @import "styles/variables";
 
 .steps {
-  padding: 120px 0;
+  padding: 88px 0 120px;
   background-color: $secondary;
 
   @media (min-width: 1312px) {
-    padding: 200px 0;
+    padding: 100px 0 160px;
   }
 
   .item {
     display: flex;
     gap: 40px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 
     @media (min-width: 768px) {
       margin-bottom: 0;

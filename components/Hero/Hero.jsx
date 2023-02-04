@@ -1,6 +1,5 @@
 import styles from "./Hero.module.scss";
 import Image from "next/image";
-import Link from "next/link";
 
 const advantages = [
   "Международные платежи без ограничений",

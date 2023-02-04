@@ -11,7 +11,7 @@ const advantages = [
 
 const Structure = ({ linkUrl }) => {
   return (
-    <section id={"structure"}>
+    <section id={"structure"} className={"pt-8 xl:pt-20"}>
       <div className={"container relative"}>
         <div className={"grid md:grid-cols-2 md:gap-10"}>
           <div className={"xl:flex flex-col"}>
@@ -34,7 +34,7 @@ const Structure = ({ linkUrl }) => {
               <a
                 href={linkUrl}
                 target={"_blank"}
-                className={`button ${styles.button}`}
+                className={`button button--secondary ${styles.button}`}
               >
                 Узнать больше
               </a>
@@ -55,9 +55,13 @@ const Structure = ({ linkUrl }) => {
               }}
             />
             <div className={"md:hidden flex justify-center pt-10"}>
-              <button className={`button ${styles.button}`}>
+              <a
+                href={linkUrl}
+                target={"_blank"}
+                className={`button button--secondary ${styles.button}`}
+              >
                 Узнать больше
-              </button>
+              </a>
             </div>
           </div>
         </div>

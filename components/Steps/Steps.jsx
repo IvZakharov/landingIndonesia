@@ -78,9 +78,9 @@ const whatDoesProcess = [
 
 const Steps = ({ linkUrl }) => {
   return (
-    <section className={styles.steps} id={"steps"}>
-      <div className={"container relative"}>
-        <h2 className={"sectionTitle text-white mb-24 md:mb-32"}>
+    <section className={styles.steps}>
+      <div className={"container relative pt-8 xl:pt-14"} id={"steps"}>
+        <h2 className={"sectionTitle text-white mb-10 md:mb-16"}>
           Что необходимо <br /> для регистрации?
         </h2>
         <div className={"grid md:grid-cols-2 md:gap-16 md:mb-32 xl:mb-48"}>
@@ -111,7 +111,7 @@ const Steps = ({ linkUrl }) => {
           ))}
         </div>
 
-        <h2 className={"sectionTitle text-white mb-24 md:mb-32"}>
+        <h2 className={"sectionTitle text-white mb-10 md:mb-16"}>
           Из чего состоит <br /> процесс?
         </h2>
         <div className={"grid md:grid-cols-2 md:gap-16 mb-4 md:mb-10 xl:mb-24"}>
@@ -142,7 +142,7 @@ const Steps = ({ linkUrl }) => {
           ))}
         </div>
 
-        <a href={linkUrl} target={"_blank"} className={"button w-full"}>
+        <a href={linkUrl} target={"_blank"} className={"button  w-full"}>
           Меня всё устраивает! <br className={"md:hidden"} /> Запускаем процесс
           регистрации
         </a>

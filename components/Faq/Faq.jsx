@@ -14,37 +14,37 @@ const faqArr = [
   },
   {
     title: "Поможете провести разовую сделку?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Поможем. Оставьте заявку с описанием вашего кейса, мы подберем для вас оптимальное решение.",
   },
   {
     title: "Если я уже в Индонезии, мне будет скидка?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Разумеется, при этом значительная. Свяжитесь с нами для обсуждения индивидуальных условий.",
   },
   {
     title: "Что с налогами?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "В первые три года деятельности или по достижении суммарного оборота 4 800 000 000 IDR (320 000 $) налог составляет 0,5% от оборота. После применяется два основных налога - корпоративный налог на прибыль 22% и НДС 11%; Отчётность сдаётся раз в квартал. Минимальная стоимость обслуживания 2 500 $ в год.",
   },
   {
     title: "Что с уставным капиталом?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Размер уставного капитала составляет 10 000 000 000 IDR (670 000 $) за каждый вид деятельности. \n Регулятор не требует его единовременного размещения. Поступление средств в счёт пополнения уставного (инвест) капитала не облагается налогом.",
   },
   {
     title: "Что с банками?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Мы работаем с банками BRI, Permata, Mandiri. По умолчанию счёт открываем в Permata. Мы предоставляем мультивалютные SWIFT счета для расчётов с контрагентами по всему миру, в том числе РФ. Среднее время исполнения международного платежа - один рабочий день. Средняя комиссии при отправке SWIFT в IDR составит 26 $ + потеря на автоконвертации, при отправке в USD - от 36 $ до 160 $",
   },
   {
     title: "Что с покупкой криптовалюты?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Криптовалюту за IDR с банковского счёта возможно купить на локальных биржах. Курсовые потери при обмене USD-IDR-USDT в среднем составляют 0,7%, комиссия биржи при покупке/продаже криптовалюты в среднем составляет 0,5%;",
   },
   {
     title: "Что с составом компании?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Компания должна состоять минимум из двух участников, минимальная доля участия 2%. Для открытия счёта требуется присутствие директора, поэтому при удалённой регистрации необходим номинальный директор. Бенифициарами могут быть граждане любой другой страны, в том числе РФ. Долей в индонезийской компании также может владеть другая компания.",
   },
 ];
 
 const Faq = () => {
   return (
-    <section id={"faq"}>
+    <section id={"faq"} className={"pt-8 xl:pt-16"}>
       <div className={"container relative"}>
         <h2 className={"sectionTitle text-center mb-5 md:mb-10 xl:mb-20"}>
           FAQ
@@ -80,7 +80,7 @@ const Faq = () => {
 
                     <AccordionBody>
                       <div className={"p-5 xl:px-10"}>
-                        <p className={"text"}>{obj.text}</p>
+                        <p className={"text whitespace-pre-line"}>{obj.text}</p>
                       </div>
                     </AccordionBody>
                   </div>

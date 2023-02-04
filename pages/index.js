@@ -40,13 +40,13 @@ export default function Home() {
       <div className={menuIsOpen ? "overflow-hidden" : ""}>
         <Header onOpenMenu={openMenu} />
         <main>
-          <div className={"mb-16 md:mb-32 xl:mb-56"}>
+          <div className={"mb-8 md:mb-32 xl:mb-36"}>
             <Hero linkUrl={linkUrl} />
           </div>
           <div className={"mb-36 md:mb-48 xl:mb-72"}>
             <Structure linkUrl={linkUrl} />
           </div>
-          <div className={"mb-36 md:mb-48 xl:mb-72"}>
+          <div className={"mb-28 md:mb-40 xl:mb-52"}>
             <Benefits linkUrl={linkUrl} />
           </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
             <Advantages />
           </div>
 
-          <div className={"mb-32 xl:mb-52"}>
+          <div className={"mb-24 xl:mb-36"}>
             <Steps linkUrl={linkUrl} />
           </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
             <Special linkUrl={linkUrl} />
           </div>
 
-          <div className={"mb-32 md:mb-48 xl:mb-72"}>
+          <div className={"mb-24 md:mb-40 xl:mb-56"}>
             <Quote linkUrl={linkUrl} />
           </div>
 

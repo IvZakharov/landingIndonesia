@@ -47,7 +47,6 @@ a {
 .button {
   background-color: $primary;
   border-radius: 15px;
-  border-style: none;
   box-sizing: border-box;
   color: $black;
   cursor: pointer;
@@ -61,7 +60,8 @@ a {
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
   vertical-align: baseline;
   user-select: none;
   -webkit-user-select: none;
@@ -69,6 +69,7 @@ a {
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
+  border: 3px solid $primary;
 
   @media (min-width: 1200px) {
     font-size: 22px;
@@ -77,11 +78,17 @@ a {
 
   &:hover,
   &:focus {
-    background-color: #d8be3a;
+    color: $primary;
+    background-color: transparent;
   }
 
-  &:active {
-    background-color: $primary;
+  &--secondary {
+    &:hover,
+    &:focus {
+      color: $secondary;
+      background-color: transparent;
+      border-color: $secondary;
+    }
   }
 }
 
