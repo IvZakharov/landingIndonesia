@@ -9,7 +9,7 @@ const advantages = [
   "Корпоративный криптовалютный счёт \n на местной Индонезийской бирже ",
 ];
 
-const Structure = () => {
+const Structure = ({ linkUrl }) => {
   return (
     <section id={"structure"}>
       <div className={"container relative"}>
@@ -31,9 +31,13 @@ const Structure = () => {
             </ul>
 
             <div className={"hidden md:block xl:mt-auto"}>
-              <button className={`button ${styles.button}`}>
+              <a
+                href={linkUrl}
+                target={"_blank"}
+                className={`button ${styles.button}`}
+              >
                 Узнать больше
-              </button>
+              </a>
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 import styles from "./Price.module.scss";
 import Image from "next/image";
 
-const Price = () => {
+const Price = ({ linkUrl }) => {
   return (
     <section id={"price"}>
       <div className={"container relative"}>
@@ -115,16 +115,24 @@ const Price = () => {
             </div>
             <div className={"hidden xl:block"}>
               {" "}
-              <button className={`button ${styles.button} `}>
+              <a
+                href={linkUrl}
+                target={"_blank"}
+                className={`button ${styles.button} `}
+              >
                 Получить специальное предложение
-              </button>
+              </a>
             </div>
           </div>
         </div>
         <div className={" xl:hidden"}>
-          <button className={`button ${styles.button}`}>
+          <a
+            href={linkUrl}
+            target={"_blank"}
+            className={`button ${styles.button}`}
+          >
             Получить специальное предложение
-          </button>
+          </a>
         </div>
       </div>
     </section>

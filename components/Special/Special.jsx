@@ -71,12 +71,12 @@ const Special = ({ linkUrl }) => {
               Дополнительно
             </h2>
             <ul className={"list mb-6"}>
-              <li className={"text"}>Финансовые лицензии</li>
-              <li className={"text"}>Бизнес-лицензии</li>
-              <li className={"text"}>Регистрация патентов</li>
-              <li className={"text"}>Получение акциз</li>
-              <li className={"text"}>Разрешения на экспорт/импорт</li>
-              <li className={"text"}>Регистрация недвижимости</li>
+              <li className={"text mb-1"}>Финансовые лицензии</li>
+              <li className={"text mb-1"}>Бизнес-лицензии</li>
+              <li className={"text mb-1"}>Регистрация патентов</li>
+              <li className={"text mb-1"}>Получение акциз</li>
+              <li className={"text mb-1"}>Разрешения на экспорт/импорт</li>
+              <li className={"text mb-1"}>Регистрация недвижимости</li>
             </ul>
             <a href={linkUrl} target={"_blank"} className={"button"}>
               Бесплатная консультация

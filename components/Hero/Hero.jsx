@@ -9,7 +9,7 @@ const advantages = [
   "Стоимость от 10 000 $",
 ];
 
-const Hero = () => {
+const Hero = ({ linkUrl }) => {
   return (
     <section className={styles.hero}>
       <div className={"container relative"}>
@@ -42,9 +42,11 @@ const Hero = () => {
           />
         </div>
 
-        <Link href={"#"} className={"button"}>
-          Связаться с менеджером
-        </Link>
+        <div className={"flex justify-center md:block"}>
+          <a href={linkUrl} target={"_blank"} className={"button"}>
+            Связаться с менеджером
+          </a>
+        </div>
       </div>
     </section>
   );

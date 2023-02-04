@@ -14,11 +14,11 @@ const items = [
 
   {
     iconPath: "/images/icons/benefits/3.svg",
-    text: "Индонезийская компания PT PMA. Учредительный состав компании: минимум два акционера нерезидента Индонезии и местный директор. Доля владения акционерами — 100%",
+    text: "Криптовалютный счёт \n на Индонезийской бирже, привязан к банковскому счёту компании, пополнение и вывод производятся в IDR. Отправка криптовалюты на сторонние кошельки с высоким лимитом",
   },
 ];
 
-const Benefits = () => {
+const Benefits = ({ linkUrl }) => {
   return (
     <section>
       <div className={"container relative"}>
@@ -37,15 +37,21 @@ const Benefits = () => {
                   height={475}
                 />
               </i>
-              <p className={"text text-center"}>{item.text}</p>
+              <p className={"text text-center whitespace-pre-line"}>
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
 
         <div className={"flex justify-center"}>
-          <button className={`button whitespace-nowrap ${styles.button}`}>
+          <a
+            href={linkUrl}
+            target={"_blank"}
+            className={`button whitespace-nowrap ${styles.button}`}
+          >
             Подробнее о тарифах и выгодах
-          </button>
+          </a>
         </div>
       </div>
     </section>

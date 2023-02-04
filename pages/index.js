@@ -16,6 +16,7 @@ import MobileMenu from "@/components/MobileMenu/MobileMenu";
 
 export default function Home() {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
+  const linkUrl = "https://wa.me/6281337973097";
 
   const openMenu = () => {
     setMenuIsOpen(true);
@@ -40,13 +41,13 @@ export default function Home() {
         <Header onOpenMenu={openMenu} />
         <main>
           <div className={"mb-16 md:mb-32 xl:mb-56"}>
-            <Hero />
+            <Hero linkUrl={linkUrl} />
           </div>
           <div className={"mb-36 md:mb-48 xl:mb-72"}>
-            <Structure />
+            <Structure linkUrl={linkUrl} />
           </div>
           <div className={"mb-36 md:mb-48 xl:mb-72"}>
-            <Benefits />
+            <Benefits linkUrl={linkUrl} />
           </div>
 
           <div className={"mb-32 xl:mb-52"}>
@@ -54,36 +55,36 @@ export default function Home() {
           </div>
 
           <div className={"mb-32 xl:mb-52"}>
-            <Steps />
+            <Steps linkUrl={linkUrl} />
           </div>
 
-          <div className={"mb-32 xl:mb-52"}>
-            <Price />
+          <div className={"mb-36 xl:mb-52"}>
+            <Price linkUrl={linkUrl} />
           </div>
 
-          <div className={"mb-32 xl:mb-52"}>
+          <div className={"mb-32 xl:mb-56"}>
             <Partners />
           </div>
 
-          <div className={"mb-32 xl:mb-52"}>
-            <Special />
+          <div className={"mb-32 md:mb-48 xl:mb-72"}>
+            <Special linkUrl={linkUrl} />
           </div>
 
-          <div className={"mb-32 xl:mb-52"}>
-            <Quote />
+          <div className={"mb-32 md:mb-48 xl:mb-72"}>
+            <Quote linkUrl={linkUrl} />
           </div>
 
-          <div className={"mb-32 xl:mb-52"}>
+          <div className={"mb-32 md:mb-48 xl:mb-96"}>
             <Faq />
           </div>
         </main>
-        <Footer tel={"+62 813 3797 3097 "} />
+        <Footer tel={"+62 813 3797 3097 "} linkUrl={linkUrl} />
 
         {menuIsOpen && (
           <MobileMenu
             onCloseMenu={closeMenu}
             tel={"+62 813 3797 3097 "}
-            linkUrl={""}
+            linkUrl={linkUrl}
           />
         )}
       </div>

@@ -1,5 +1,6 @@
 import styles from "./Steps.module.scss";
 import Image from "next/image";
+import parse from "html-react-parser";
 
 const whatNeedArr = [
   {
@@ -59,7 +60,7 @@ const whatDoesProcess = [
   {
     digitIconPath: "/images/icons/digits/4.svg",
     iconPath: "/images/icons/steps/10.svg",
-    text: "Отправка доступов в онлайн-банкинг – 5 рабочих дней после открытия счёта",
+    text: "Отправка доступов в онлайн-банкин – 5 рабочих дней после открытия счёта",
   },
 
   {
@@ -75,7 +76,7 @@ const whatDoesProcess = [
   },
 ];
 
-const Steps = () => {
+const Steps = ({ linkUrl }) => {
   return (
     <section className={styles.steps} id={"steps"}>
       <div className={"container relative"}>
@@ -113,7 +114,7 @@ const Steps = () => {
         <h2 className={"sectionTitle text-white mb-24 md:mb-32"}>
           Из чего состоит <br /> процесс?
         </h2>
-        <div className={"grid md:grid-cols-2 md:gap-16"}>
+        <div className={"grid md:grid-cols-2 md:gap-16 mb-4 md:mb-10 xl:mb-24"}>
           {whatDoesProcess.map((item, idx) => (
             <div key={idx} className={styles.item}>
               <i className={styles.stepIcon}>
@@ -140,6 +141,11 @@ const Steps = () => {
             </div>
           ))}
         </div>
+
+        <a href={linkUrl} target={"_blank"} className={"button w-full"}>
+          Меня всё устраивает! <br className={"md:hidden"} /> Запускаем процесс
+          регистрации
+        </a>
       </div>
     </section>
   );

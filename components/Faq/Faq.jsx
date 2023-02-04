@@ -10,7 +10,7 @@ import {
 const faqArr = [
   {
     title: "Кому это может быть полезно?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    text: "Компания в Индонезии может быть использована как дополнительный финансовый инструмент для бизнесов, имеющим обширную международную структуру. Также компания может быть полезна предприятиям из РФ для организации международных цепочек поставок и оплат во избежание санкций и блокировок. Благодаря местному регулированию, компания может быть интересна для предпринимателей, желающих легально приобретать криптовалюту за средства с доходов от своей коммерческой деятельности, а также для предпринимателей, получающих доход в криптовалюте и желающих легализовать свои доходы для приобретения активов или расчётов с контрагентами.",
   },
   {
     title: "Поможете провести разовую сделку?",
