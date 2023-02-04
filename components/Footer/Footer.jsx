@@ -1,7 +1,7 @@
 import styles from "./Footer.module.scss";
 
 const links = [
-  { id: 0, href: "/", title: "Главаня" },
+  { id: 0, href: "/", title: "Главная" },
   { id: 1, href: "#structure", title: "Структура" },
   { id: 2, href: "#advantages", title: "Преимущества" },
   { id: 3, href: "#steps", title: "Процесс открытия" },
