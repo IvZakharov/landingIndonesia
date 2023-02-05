@@ -73,9 +73,6 @@
 
   @media (min-width: 1312px) {
     padding: 25px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .title {
@@ -83,7 +80,7 @@
     font-size: 18px;
     line-height: 23px;
     font-family: var(--IBMPlexSans-font);
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 
     @media (min-width: 1312px) {

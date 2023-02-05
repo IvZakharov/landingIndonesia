@@ -66,7 +66,7 @@ const whatDoesProcess = [
   {
     digitIconPath: "/images/icons/digits/5.svg",
     iconPath: "/images/icons/steps/11.svg",
-    text: "Выдача токена – до 8 рабочих дней после открытия счёта, не включая доставку в другую страну",
+    text: "Выдача токена – до 8 дней после открытия счёта, не включая доставку в другую страну",
   },
 
   {
@@ -79,9 +79,9 @@ const whatDoesProcess = [
 const Steps = ({ linkUrl }) => {
   return (
     <section className={styles.steps}>
-      <div className={"container relative pt-8 xl:pt-20"} id={"steps"}>
+      <div className={"container relative pt-8 xl:pt-28"} id={"steps"}>
         <h2 className={"sectionTitle text-white mb-10 md:mb-16"}>
-          Что необходимо <br /> для регистрации?
+          Что необходимо для регистрации?
         </h2>
         <div className={"grid md:grid-cols-2 md:gap-10 md:mb-32 xl:mb-48"}>
           {whatNeedArr.map((item, idx) => (
