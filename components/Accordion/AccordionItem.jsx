@@ -52,11 +52,11 @@ const AccordionItem = ({ title, body, Id, Index, setIndex }) => {
       </div>
 
       <div
-        className={`${styles.body} xl:px-10`}
+        className={`${styles.body}`}
         style={{ maxHeight: open && Index === Id ? bodyHeight : 0 }}
         ref={bodyRef}
       >
-        <p className={"text whitespace-pre-line p-5 pt-0"}>{body}</p>
+        <p className={"text whitespace-pre-line p-5 pt-0 xl:px-10"}>{body}</p>
       </div>
     </div>
   );
