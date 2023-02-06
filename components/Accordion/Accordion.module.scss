@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.item {
+  background-color: $gray;
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+  .title {
+    font-weight: 700;
+    font-family: var(--IBMPlexSans-font);
+    text-align: left;
+  }
+
+  .body {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .icon {
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
+
+    @media (min-width: 1312px) {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
