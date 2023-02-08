@@ -29,9 +29,13 @@ const unbounded = localFont({
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <div className={unbounded.className}>
-        <Component {...pageProps} />
-      </div>
+      <style jsx global>{`
+        html {
+          --unbounded-font: ${unbounded.style.fontFamily};
+          --IBMPlexSans-font: ${IBMPlexSans.style.fontFamily};
+        }
+      `}</style>
+      <Component {...pageProps} />
     </>
   );
 }
