@@ -26,9 +26,6 @@ module.exports = {
         center: true,
         screens: { sm: "576px", md: "768px", lg: "984px", xl: "1312px" },
       },
-      fontFamily: {
-        sans: ["var(--IBMPlexSans-font)", ...fontFamily.sans],
-      },
     },
   },
   plugins: [],
