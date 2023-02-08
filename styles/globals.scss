@@ -13,7 +13,6 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-  font-family: var(--IBMPlexSans-font);
 }
 
 h1,
@@ -28,8 +27,10 @@ h6 {
   font-weight: 700;
 }
 
-p {
+p,
+span {
   color: $black;
+  font-family: var(--IBMPlexSans-font);
 }
 
 body {
@@ -70,6 +71,7 @@ a {
   font-size: 15px;
   line-height: 20px;
   border: 3px solid $primary;
+  font-family: var(--IBMPlexSans-font);
 
   @media (min-width: 1200px) {
     font-size: 22px;
