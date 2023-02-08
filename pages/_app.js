@@ -31,6 +31,7 @@ export default function App({ Component, pageProps }) {
     <>
       <style jsx global>{`
         html {
+          --unbounded-font: ${unbounded.style.fontFamily};
           --IBMPlexSans-font: ${IBMPlexSans.style.fontFamily};
         }
       `}</style>

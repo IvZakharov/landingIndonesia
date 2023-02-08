@@ -21,8 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--unbounded-font);
-  font-style: normal;
+  font-family: var(--unbounded-font), cursive;
   color: $black;
   font-weight: 700;
 }
@@ -30,7 +29,7 @@ h6 {
 p,
 span {
   color: $black;
-  font-family: var(--IBMPlexSans-font);
+  font-family: var(--IBMPlexSans-font), sans-serif;
 }
 
 body {
