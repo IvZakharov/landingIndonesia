@@ -1,16 +1,5 @@
 import styles from "./Hero.module.scss";
 import Image from "next/image";
-import localFont from "@next/font/local";
-
-const unbounded = localFont({
-  src: [
-    {
-      path: "../../fonts/Unbounded-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-});
 
 const advantages = [
   "Международные платежи без ограничений",
@@ -23,7 +12,7 @@ const Hero = ({ linkUrl }) => {
   return (
     <section className={styles.hero}>
       <div className={"container relative"}>
-        <h1 className={`${styles.title} ${unbounded.className}`}>
+        <h1 className={styles.title}>
           Компания и счёт <br className={"md:hidden"} /> в Индонезии <br /> для
           бизнеса <br /> и не только
         </h1>
