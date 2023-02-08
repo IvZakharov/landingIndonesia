@@ -8,14 +8,14 @@ const IBMPlexSans = localFont({
       weight: "500",
       style: "normal",
       preload: true,
-      display: "swap",
+      display: "fallback",
     },
     {
       path: "../fonts/IBMPlexSans-Bold.ttf",
       weight: "700",
       style: "normal",
       preload: true,
-      display: "swap",
+      display: "fallback",
     },
   ],
 });
@@ -27,7 +27,7 @@ const unbounded = localFont({
       weight: "700",
       style: "normal",
       preload: true,
-      display: "swap",
+      display: "fallback",
     },
   ],
 });
