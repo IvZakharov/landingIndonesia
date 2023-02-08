@@ -1,6 +1,5 @@
 import "../styles/globals.scss";
 import localFont from "@next/font/local";
-import { Unbounded } from "@next/font/google";
 
 const IBMPlexSans = localFont({
   src: [
@@ -17,10 +16,14 @@ const IBMPlexSans = localFont({
   ],
 });
 
-const unbounded = Unbounded({
-  weight: ["700"],
-  style: ["normal"],
-  subsets: ["latin", "cyrillic"],
+const unbounded = localFont({
+  src: [
+    {
+      path: "../fonts/Unbounded-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
 });
 
 export default function App({ Component, pageProps }) {

@@ -1,13 +1,12 @@
 import styles from "./Header.module.scss";
-import Image from "next/image";
 import MainNav from "@/components/Nav/MainNav";
 
-const Header = ({ onOpenMenu }) => {
+const Header = ({ onOpenMenu, links }) => {
   return (
     <header className={`${styles.header}`}>
       <div className={"container"}>
         <div className={"hidden md:block"}>
-          <MainNav />
+          <MainNav links={links} />
         </div>
 
         <button

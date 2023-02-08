@@ -28,12 +28,27 @@ const Footer = ({ linkUrl, tel }) => {
 
           <nav className={`${styles.nav} mb-12 xl:col-span-4`}>
             <ul>
-              {links &&
-                links.map((obj, idx) => (
-                  <li key={idx}>
-                    <a href={obj.href}>{obj.title}</a>
-                  </li>
-                ))}
+              <li>
+                <a href={"/"}>Главная</a>
+              </li>
+              <li>
+                <a href={"#structure"}>Структура</a>
+              </li>
+              <li>
+                <a href={"#advantages"}>Преимущества</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href={"#steps"}>Процесс открытия</a>
+              </li>
+              <li>
+                <a href={"#price"}>Стоимость</a>
+              </li>
+              <li>
+                <a href={"#contacts"}>Контакты</a>
+              </li>
             </ul>
           </nav>
 

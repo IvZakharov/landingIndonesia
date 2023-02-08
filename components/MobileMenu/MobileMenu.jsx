@@ -1,7 +1,7 @@
 import styles from "./MobileMenu.module.scss";
 import MainNav from "@/components/Nav/MainNav";
 
-const MobileMenu = ({ onCloseMenu, linkUrl, tel }) => {
+const MobileMenu = ({ onCloseMenu, linkUrl, tel, links }) => {
   return (
     <aside className={`pt-6 ${styles.mobileMenu}`}>
       <div className="container flex flex-col md:items-center md:justify-between md:flex-row relative">
@@ -29,8 +29,7 @@ const MobileMenu = ({ onCloseMenu, linkUrl, tel }) => {
         </button>
 
         <div className={"mb-12"}>
-          {" "}
-          <MainNav onCloseMenu={onCloseMenu} />
+          <MainNav onCloseMenu={onCloseMenu} links={links} />
         </div>
 
         <a

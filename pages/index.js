@@ -26,6 +26,26 @@ export default function Home() {
     setMenuIsOpen(false);
   };
 
+  const links = [
+    { id: 0, href: "/", title: "Главная" },
+    { id: 1, href: "#structure", title: "Структура" },
+    { id: 2, href: "#advantages", title: "Преимущества" },
+    { id: 3, href: "#steps", title: "Процесс открытия" },
+    { id: 4, href: "#price", title: "Стоимость" },
+    { id: 6, href: "#contacts", title: "Контакты" },
+    { id: 5, href: "#faq", title: "FAQ" },
+  ];
+
+  const mainLinks = [
+    { id: 0, href: "/", title: "Главная" },
+    { id: 1, href: "#structure", title: "Структура" },
+    { id: 2, href: "#advantages", title: "Преимущества" },
+    { id: 3, href: "#steps", title: "Процесс открытия" },
+    { id: 4, href: "#price", title: "Стоимость" },
+    { id: 5, href: "#faq", title: "FAQ" },
+    { id: 6, href: "#contacts", title: "Контакты" },
+  ];
+
   return (
     <>
       <Head>
@@ -35,10 +55,14 @@ export default function Home() {
           content="Международные платежи без ограничений, Легальная и выгодная покупка USDT, Открытие онлайн за 15 дней, Стоимость от 10 000 $"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/images/meta.jpg" />
+        <meta name="twitter:image" content="/images/meta.jpg·" />
+        <link rel="canonical" href="https://ptpma.pro" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={menuIsOpen ? "overflow-hidden" : ""}>
-        <Header onOpenMenu={openMenu} />
+        <Header onOpenMenu={openMenu} links={mainLinks} />
         <main>
           <div className={"mb-8 md:mb-32 xl:mb-36"}>
             <Hero linkUrl={linkUrl} />
@@ -85,6 +109,7 @@ export default function Home() {
             onCloseMenu={closeMenu}
             tel={"+62 813 3797 3097 "}
             linkUrl={linkUrl}
+            links={links}
           />
         )}
       </div>
