@@ -99,6 +99,7 @@ a {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
+  font-family: var(--unbounded-font), "Roboto", cursive;
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -116,6 +117,7 @@ a {
   font-size: 22px;
   line-height: 27px;
   color: $black;
+  font-family: var(--unbounded-font), "Roboto", cursive;
 
   @media (min-width: 768px) {
     font-size: 32px;
