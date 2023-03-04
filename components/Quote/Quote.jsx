@@ -42,9 +42,7 @@ const Quote = ({ linkUrl }) => {
               оптимизации бизнес-процессов.
             </p>
 
-            <p
-              className={"text md:text-justify text-white italic mb-16 md:mb-8"}
-            >
+            <p className={"text md:text-justify text-white italic md:mb-8"}>
               Индонезия, по сравнению с другими странами Азии, является новым
               регионом для большинства участников рынка. Однако, быстрорастущая
               экономика, лояльное регулирование и нейтральная политическая
@@ -52,7 +50,7 @@ const Quote = ({ linkUrl }) => {
               предпринимателей.
             </p>
 
-            <p className={"text md:text-justify text-white italic mb-8"}>
+            <p className={"text md:text-justify text-white italic mb-16"}>
               Наша команда проконсультирует вас по вопросам местного
               законодательства, окажет помощь в открытии компаний, банковских
               счетов и сопровождении бизнеса. Все сотрудники обладают большим
