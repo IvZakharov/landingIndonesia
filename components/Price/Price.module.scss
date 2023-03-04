@@ -10,6 +10,7 @@
 
   span {
     color: #2b7411;
+    font-family: var(--unbounded-font);
   }
 
   @media (min-width: 768px) {
@@ -79,7 +80,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    font-family: var(--IBMPlexSans-font);
     text-align: left;
     margin-bottom: 20px;
 
