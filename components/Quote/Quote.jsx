@@ -34,7 +34,7 @@ const Quote = ({ linkUrl }) => {
           </div>
 
           <div className={"md:flex flex-col"}>
-            <p className={"text md:text-justify text-white italic mb-8"}>
+            <p className={"text text-justify text-white italic mb-8"}>
               Текущая ситуация в мировой экономике оказывает пагубное влияние на
               многие сферы бизнеса. Ужесточение банковского и валютного
               регулирования, санкции, усложнение цепочек поставок, все это
@@ -42,9 +42,7 @@ const Quote = ({ linkUrl }) => {
               оптимизации бизнес-процессов.
             </p>
 
-            <p
-              className={"text md:text-justify text-white italic mb-8 md:mb-8"}
-            >
+            <p className={"text text-justify text-white italic mb-8 md:mb-8"}>
               Индонезия, по сравнению с другими странами Азии, является новым
               регионом для большинства участников рынка. Однако, быстрорастущая
               экономика, лояльное регулирование и нейтральная политическая
@@ -52,7 +50,7 @@ const Quote = ({ linkUrl }) => {
               предпринимателей.
             </p>
 
-            <p className={"text md:text-justify text-white italic mb-16"}>
+            <p className={"text text-justify text-white italic mb-16"}>
               Наша команда проконсультирует вас по вопросам местного
               законодательства, окажет помощь в открытии компаний, банковских
               счетов и сопровождении бизнеса. Все сотрудники обладают большим
@@ -61,7 +59,7 @@ const Quote = ({ linkUrl }) => {
               индонезийской компании.
             </p>
 
-            <div className={"flex md:mt-auto"}>
+            <div className={"flex md:mt-auto md:inline"}>
               <a
                 href={linkUrl}
                 target={"_blank"}

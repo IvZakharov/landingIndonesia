@@ -26,6 +26,10 @@
 .button {
   margin: 0 auto;
 
+  @media (min-width: 768px) {
+    margin-right: auto;
+  }
+
   @media (min-width: 1312px) {
     padding-left: 44px;
     padding-right: 44px;
