@@ -21,8 +21,8 @@ const Footer = ({ linkUrl, tel }) => {
           <div className={"mb-12 md:col-span-2 xl:col-span-5"}>
             <h4 className={styles.addressTitle}>Адрес офиса в Индонезии</h4>
             <p className={"text text-center md:text-left"}>
-              Jalan Sunset Road Nomor 819, Bali <br className={"xl:hidden"} />{" "}
-              Ruko Sunset Indah Nomor 10, Kuta, Bali
+              Jalan Raya Semer, Pertokoan Kencana No.1, Kerobokan, Kerobokan
+              Kelod, Kuta Utara, Badung Regency, Bali 80361
             </p>
           </div>
 
